@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="./style/signup.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="color:white;">Sign Up</h2>
+
+        <form action="/signup" method="POST">
+
+            <div class="container-input">
+                <div class="input-box">
+                    <i class="fa fa-user"></i>
+                    <input type="text" name="name" placeholder="Full Name">
+                </div>
+            </div>
+
+            <div class="container-input">
+                <div class="input-box">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+            </div>
+
+            <div class="container-input">
+                <div class="input-box">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+            </div>
+
+            <div class="container-input">
+                <div class="input-box">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" name="conf_password" placeholder="Confirm Password">
+                </div>
+            </div>
+
+            <button type="submit">Créer</button>
+        </form>
+
+        
+         <a id="loginText" href="/login">LogIn</a>
+    </div>
+</body>
+</html>
