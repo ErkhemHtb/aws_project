@@ -6,6 +6,7 @@ const path = require('path');
 const mongoose = require('mongoose');
 const cookieParser = require("cookie-parser");
 const userRoutes = require("./Router/UserRouter");
+const userPost = require("./Router/PostRouter");
 
 const app = express();
 app.use(express.static(path.join(__dirname, 'views')));
@@ -24,6 +25,7 @@ const client = mongoose.connect(uri)
 
 
 app.use("/", userRoutes);
+app.use("/post", userPost);
 
 
 

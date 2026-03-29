@@ -113,7 +113,7 @@ router.post("/login",async (req,res)=>{
 
 router.post("/logout", (req, res) => {
     res.clearCookie("token");
-    return res.send("Déconnexion réussie ✅")
+    return res.send("Déconnexion réussie")
 });
 
 
